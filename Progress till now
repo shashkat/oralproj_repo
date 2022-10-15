@@ -1,0 +1,19 @@
+Currently aiming to perform a copy number analysis of oral cancer alignment files (bam).
+
+This, I am gonna do using a consensus copy number approach, inspired from- https://github.com/sdentro/icgc_consensus_copynumber
+
+For this, I need at least 2 cnv analysis tools to work, which has turned out to be much more difficult than it may initially sound.
+
+In the above link, they have mentioned multiple tools, like aceseq, jabba etc.
+
+I have tried almost all of them. All give some or the other problem even after hours of trying to make them work.
+
+Latest, I tried making ACEseq work, but even after making it run successfully (which included modifying its code, which was so outdated that its grep and readlink flags were not recognised by shell on my pc), it gave some problems at the end, which are within its docker implementation. I dont know if I should give time to debugging those.
+
+Also, I have tried to run jabba, and battenberg before that, which have both ended up in similar fashions.
+
+I was able to run absolute. I requires a segmentation file as input, and that i obtained from the gatk cnv analysis pipeline. Running the gatk cnv analysis has been a checkpoint so far- it also gave problems, but due to an updated tool, and proper documentation, I was able to solve them eventually.
+
+I also tried to make a tool called Hatchet run (the decifer tool, in which I am gonna feed my CNV analysis data eventually, used hatchet as their cnv caller), but again, the efforts were in vain.
+
+Next, I plan to make gatk run effectively, as though I am getting some results with it, they are non optimized for the data I am using. For that, I am gonna read the whole documentation of gatk properly.
