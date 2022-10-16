@@ -17,3 +17,7 @@ I was able to run absolute. I requires a segmentation file as input, and that i 
 I also tried to make a tool called Hatchet run (the decifer tool, in which I am gonna feed my CNV analysis data eventually, used hatchet as their cnv caller), but again, the efforts were in vain.
 
 Next, I plan to make gatk run effectively, as though I am getting some results with it, they are non optimized for the data I am using. For that, I am gonna read the whole documentation of gatk properly.
+
+Update on 16-10-2022
+
+I have come to the conclusion that it is best that I try to make gatk work effectively, and understand its whole workflow from the basics fully. Then, when I am able to get decent segmentation files from it (currently getting very spurious segments, and their number is very large, around 10k), I can use it as an input to ABSOLUTE and GISTIC.
