@@ -1,0 +1,27 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2639
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fmodern\fcharset0 Courier;}
+{\colortbl;\red255\green255\blue255;\red245\green245\blue245;}
+{\*\expandedcolortbl;;\cssrgb\c96863\c96863\c96863;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww16300\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs28 \cf0 \cb2 \expnd0\expndtw0\kerning0
+gatk --java-options "-Xmx3g" CollectAllelicCounts \\\
+    -L sandbox/targets_C.preprocessed.interval_list \\\
+    -I my_data/normal2.bam \\\
+    -R my_data/genome.fa \\\
+    -O sandbox/hcc1143_N_clean.allelicCounts.tsv\
+\
+gatk --java-options "-Xmx4g" ModelSegments \\\
+    --denoised-copy-ratios sandbox/hcc1143_T_clean.denoisedCR.tsv \\\
+    --output cnv_out \\\
+    --output-prefix hcc1143_T_clean\
+\
+gatk PlotModeledSegments \\\
+    --denoised-copy-ratios sandbox/hcc1143_T_clean.denoisedCR.tsv \\\
+    --segments cnv_out/hcc1143_T_clean.modelFinal.seg \\\
+    --sequence-dictionary genome.dict \\\
+    --output sandbox/plots2 \\\
+    --output-prefix hcc1143_T_clean\
+}
