@@ -21,3 +21,9 @@ Next, I plan to make gatk run effectively, as though I am getting some results w
 Update on 16-10-2022
 
 I have come to the conclusion that it is best that I try to make gatk work effectively, and understand its whole workflow from the basics fully. Then, when I am able to get decent segmentation files from it (currently getting very spurious segments, and their number is very large, around 10k), I can use it as an input to ABSOLUTE and GISTIC.
+
+Update on 18-10-2022
+
+The files being made by collectalleliccounts were very large in size (500-1000mb), and thus, writing them, and reading them was taking a lot of time. I tried to look into the produced tsv files, and found that it stored the ref and alt counts and nucleotides, for every position in the intervals range. I simply solved this (idk if it is a correct solution or not) by making a vcf of the tumor bam first, using the reference genome, just for the purpose of pinpointing regions of interest. I gave this vcf as input to the collectalleliccounts function, and it gave a much smaller and easily readable/writable file, with which a segmentation file with 59 segments was obtained. Next, I will use a function to extract the SNPs only from the vcf, and use that filtered vcf as an input to the collectalleliccounts function, as it needs only SNP vcf.
+
+
