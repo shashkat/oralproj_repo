@@ -26,4 +26,7 @@ Update on 18-10-2022
 
 The files being made by collectalleliccounts were very large in size (500-1000mb), and thus, writing them, and reading them was taking a lot of time. I tried to look into the produced tsv files, and found that it stored the ref and alt counts and nucleotides, for every position in the intervals range. I simply solved this (idk if it is a correct solution or not) by making a vcf of the tumor bam first, using the reference genome, just for the purpose of pinpointing regions of interest. I gave this vcf as input to the collectalleliccounts function, and it gave a much smaller and easily readable/writable file, with which a segmentation file with 59 segments was obtained. Next, I will use a function to extract the SNPs only from the vcf, and use that filtered vcf as an input to the collectalleliccounts function, as it needs only SNP vcf.
 
+Update on 18-10-2022 (2)
+
+I used the snp only vcf file for the input of collectalleliccounts and it gave me some increase in the number of segments (69 now). I think this is change in the direction of better. Next, I plan on increasing the bin size in the analysis from the start.
 
