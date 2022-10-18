@@ -1,0 +1,42 @@
+#<METADATA>Ln prior of deletion of length 10=-12.471763294518178
+#<METADATA>Ln prior of deletion of length 9=-12.928521697013894
+#<METADATA>Ln prior of deletion of length 8=-11.778616113958233
+#<METADATA>Ln prior of deletion of length 7=-12.654084851312133
+#<METADATA>Ln prior of deletion of length 6=-12.044319279691239
+#<METADATA>Ln prior of deletion of length 5=-12.471763294518178
+#<METADATA>Ln prior of deletion of length 4=-11.10227605171467
+#<METADATA>Ln prior of deletion of length 3=-11.542227335894003
+#<METADATA>Ln prior of deletion of length 2=-11.00542622572475
+#<METADATA>Ln prior of deletion of length 1=-9.7953184328313
+#<METADATA>Ln prior of SNV=-5.577633759117854
+#<METADATA>Ln prior of insertion of length 1=-9.7953184328313
+#<METADATA>Ln prior of insertion of length 2=-10.89622693375976
+#<METADATA>Ln prior of insertion of length 3=-11.865627490947864
+#<METADATA>Ln prior of insertion of length 4=-11.060776320807916
+#<METADATA>Ln prior of insertion of length 5=-12.577123810176005
+#<METADATA>Ln prior of insertion of length 6=-12.614864138158852
+#<METADATA>Ln prior of insertion of length 7=-14.08120120695228
+#<METADATA>Ln prior of insertion of length 8=-12.209399030050687
+#<METADATA>Ln prior of insertion of length 9=-13.570375583186289
+#<METADATA>Ln prior of insertion of length 10=-13.793519134500498
+#<METADATA>High-AF beta-binomial cluster=weight = 0.0087, alpha = 9.38, beta = 0.67
+#<METADATA>Background beta-binomial cluster=weight = 0.0411, alpha = 2.48, beta = 3.96
+#<METADATA>Binomial cluster 1=weight = 0.3857, mean = 0.177
+#<METADATA>Binomial cluster 1=weight = 0.2845, mean = 0.990
+#<METADATA>Binomial cluster 1=weight = 0.1220, mean = 0.116
+#<METADATA>Binomial cluster 1=weight = 0.0961, mean = 0.547
+#<METADATA>Binomial cluster 1=weight = 0.0654, mean = 0.396
+#<METADATA>Binomial cluster 1=weight = 0.0301, mean = 0.692
+#<METADATA>Binomial cluster 1=weight = 0.0147, mean = 0.460
+#<METADATA>Binomial cluster 1=weight = 0.0010, mean = 0.516
+#<METADATA>Binomial cluster 1=weight = 0.0003, mean = 0.043
+#<METADATA>Binomial cluster 1=weight = 0.0002, mean = 0.519
+#<METADATA>threshold=0.516
+#<METADATA>fdr=0.035
+#<METADATA>sensitivity=0.994
+filter	FP	FDR	FN	FNR
+weak_evidence	979.05	0.03	78.83	0.0
+strand_bias	119.76	0.0	19.73	0.0
+slippage	24.08	0.0	28.03	0.0
+haplotype	56.64	0.0	28.46	0.0
+germline	61.18	0.0	41.08	0.0
